@@ -595,7 +595,7 @@ for ($i=0;$i<$num_int;$i++) {
   
   ##redoing pu calc to use our improved used/total numbers.
   if ( $$result{$used_table . $tindex[$i]} != 0 ) {
-  	$pu = ( $bu * 100 ) / ( $to * ( 100 - $o_reserve ) /100 );
+  	$pu = ( $bu * 100 ) / ( $to );
   	#print "pu =: $pu\n\n";
   }else {
     $pu=0;
